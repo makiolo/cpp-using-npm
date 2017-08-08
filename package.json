@@ -1,0 +1,21 @@
+{
+  "name": "cpp-using-npm",
+  "version": "1.0.0",
+  "description": "example using npm with C++",
+  "main": "example.cpp",
+  "scripts": {
+    "preinstall": "curl -s https://raw.githubusercontent.com/makiolo/cmaki/master/bootstrap.sh | bash",
+    "install": "bash ./cmaki/clean.sh && bash ./cmaki/setup.sh && bash ./cmaki/compile.sh",
+    "test": "bash ./cmaki/tests.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/makiolo/cpp-using-npm.git"
+  },
+  "author": "Ricardo Marmolejo García",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/makiolo/cpp-using-npm/issues"
+  },
+  "homepage": "https://github.com/makiolo/cpp-using-npm#readme"
+}
