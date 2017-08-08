@@ -57,6 +57,7 @@ install:
   - pip install --user codecov
 
 script:
+  - npm install design-patterns-cpp14
   - npm install
   - (cd cmaki_generator && ./build github://$TRAVIS_REPO_SLUG -o --server=http://artifacts.myftp.biz:8080)
 
