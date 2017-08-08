@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/makiolo/cpp-using-npm/issues"
   },
-  "homepage": "https://github.com/makiolo/cpp-using-npm#readme"
+  "homepage": "https://github.com/makiolo/cpp-using-npm#readme",
+  "devDependencies": {
+    "design-patterns-cpp14": "^1.0.6"
+  }
 }
