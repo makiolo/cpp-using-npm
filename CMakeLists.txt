@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.2.2)
 # # only need this in special for use header only libraries from npm !
 # include_directories(node_modules)
 # set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
-# add_executable(example example.cpp)
+# add_executable(example src/example.cpp)
 # need generate some target install
 # install(TARGETS example DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 ##################################################################################
@@ -14,5 +14,5 @@ cmake_minimum_required(VERSION 3.2.2)
 set(CMAKI_REPOSITORY "http://artifacts.myftp.biz:8080")
 include("${CMAKE_SOURCE_DIR}/cmaki/cmaki.cmake")
 cmaki_setup()
-cmaki_executable(example example.cpp)
+cmaki_executable(example src/example.cpp)
 ##################################################################################
