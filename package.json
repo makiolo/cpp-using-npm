@@ -13,7 +13,7 @@
     "url": "git+https://github.com/makiolo/cpp-using-npm.git"
   },
   "author": "Ricardo Marmolejo García",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/makiolo/cpp-using-npm/issues"
   },
