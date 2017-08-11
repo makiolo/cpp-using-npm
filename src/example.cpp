@@ -1,6 +1,29 @@
 #include <iostream>
 #include <assert.h>
 #include <design-patterns-cpp14/factory.h>
+#include <fast-event-system/async_fast.h>
+
+int main()
+{
+	const int N = 5;
+	int counter = 0;
+
+	fes::async_fast<int> sync;
+	sync.connect(sync);
+	sync.connect([&counter](auto&) { 
+		std::cout << "tick!" << std::endl;
+		++counter;
+	});
+
+	sync(0);
+	for (int i = 0; i < N; ++i)
+	{
+		sync.get();
+	}
+
+	assert(counter == N);
+}
+
 
 class Base
 {
@@ -47,7 +70,7 @@ template <>
 	};
 }
 
-int main()
+int main2()
 {
 	Base::factory factory;
 	Base::factory::registrator<A> reg1(factory);
