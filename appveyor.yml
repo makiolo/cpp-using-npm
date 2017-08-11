@@ -1,0 +1,21 @@
+version: 1.0.{build}
+
+platform:
+  - x86
+  - x64
+
+configuration:
+  - Debug
+  - Release
+
+install:
+  - cmd: pip install pyyaml
+  - cmd: pip install poster
+  - cmd: npm install -g npm-check-updates
+
+build_script:
+  - cmd: npm-check-updates -u
+  - cmd: npm install
+
+test_script:
+  - cmd: npm test
