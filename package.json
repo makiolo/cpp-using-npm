@@ -23,7 +23,6 @@
   "devDependencies": {},
   "dependencies": {
     "cmaki": "^1.0.4",
-    "cmaki_generator": "^1.0.0",
     "design-patterns-cpp14": "^1.0.6",
     "fast-event-system": "^1.0.1"
   }
