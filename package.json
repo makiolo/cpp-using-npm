@@ -1,11 +1,12 @@
 {
   "name": "cpp-using-npm",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "example using npm with C++",
   "scripts": {
-    "prepublishOnly": "node node_modules/cmaki/call.js clean",
-    "install": "node node_modules/cmaki/call.js clean && node node_modules/cmaki/call.js setup && node node_modules/cmaki/call.js compile",
-    "test": "node node_modules/cmaki/call.js tests"
+	"preinstall": "curl -s https://raw.githubusercontent.com/makiolo/cmaki/master/bootstrap.sh | bash",
+	"clean": "node node_modules/cmaki/call.js clean",
+	"install": "node node_modules/cmaki/call.js install",
+	"test": "node node_modules/cmaki/call.js tests"
   },
   "repository": {
     "type": "git",
@@ -22,8 +23,8 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "cmaki": "^1.0.4",
-    "design-patterns-cpp14": "^1.0.6",
-    "fast-event-system": "^1.0.1"
+    "cmaki": "^1.0.16",
+    "design-patterns-cpp14": "^1.0.16",
+    "fast-event-system": "^1.0.6"
   }
 }

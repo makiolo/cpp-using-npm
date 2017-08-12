@@ -15,6 +15,6 @@ set(CMAKI_REPOSITORY "http://artifacts.myftp.biz:8080")
 include("${CMAKE_SOURCE_DIR}/node_modules/cmaki/cmaki.cmake")
 cmaki_setup()
 cmaki_find_package(fast-event-system)
-cmaki_executable(example src/example.cpp PTHREADS)
+cmaki2_executable(example src/example.cpp PTHREADS)
 ##################################################################################
 
