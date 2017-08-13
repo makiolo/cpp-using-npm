@@ -17,7 +17,7 @@ matrix:
             - g++-4.9
             - lcov
       env:
-        - CXX=g++-4.9 CC=gcc-4.9 MODE=Debug COVERAGE=TRUE
+        - CXX=g++-4.9 CC=gcc-4.9 MODE=Debug
     - os: linux
       compiler: clang
       addons:
