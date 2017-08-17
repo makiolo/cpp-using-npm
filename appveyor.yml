@@ -12,6 +12,7 @@ install:
   - cmd: pip install pyyaml
   - cmd: pip install poster
   - cmd: npm install -g npm-check-updates
+  - cmd: npm install -g cmaki
 
 build_script:
   - cmd: npm-check-updates -u
