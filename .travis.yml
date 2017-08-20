@@ -73,8 +73,8 @@ install:
   - npm install -g npm-check-updates
 
 script:
-  - npm-check-updates -u
-  - NODE_PATH=$(pwd) npm install
+  - ncu -u
+  - CMAKI_PWD=$(pwd) npm install
   - npm test
 
 notifications:
