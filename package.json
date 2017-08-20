@@ -1,6 +1,6 @@
 {
   "name": "cpp-using-npm",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "example using npm with C++",
   "scripts": {
     "clean": "call clean",
@@ -21,10 +21,10 @@
     "test": "tests"
   },
   "devDependencies": {
-    "cmaki": "^1.0.25"
+    "cmaki": "^1.0.27"
   },
   "dependencies": {
-    "design-patterns-cpp14": "^1.0.18",
-    "fast-event-system": "^1.0.7"
+    "design-patterns-cpp14": "^1.0.19",
+    "fast-event-system": "^1.0.8"
   }
 }
