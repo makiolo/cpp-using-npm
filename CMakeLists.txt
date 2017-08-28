@@ -1,5 +1,5 @@
 project(cpp-using-npm CXX)
-cmake_minimum_required(VERSION 3.2.2)
+cmake_minimum_required(VERSION 3.0)
 
 ################### NORMAL VERSION - NO CMAKI - NO STRANGERS CMAKES ##############
 # # only need this in special for use header only libraries from npm !
@@ -12,7 +12,11 @@ cmake_minimum_required(VERSION 3.2.2)
 
 ##################### CMAKI VERSION (can caching artifacts) ######################
 set(CMAKI_REPOSITORY "http://artifacts.myftp.biz:8080")
-include("${CMAKE_SOURCE_DIR}/node_modules/cmaki/cmaki.cmake")
+if(EXISTS "${CMAKE_CURRENT_LIST_DIR}/../cmaki")
+	include("${CMAKE_CURRENT_LIST_DIR}/../cmaki/cmaki.cmake")
+else()
+	include("${CMAKE_CURRENT_LIST_DIR}/node_modules/cmaki/cmaki.cmake")
+endif()
 cmaki_setup()
 cmaki_find_package(fast-event-system)
 cmaki2_executable(example src/example.cpp PTHREADS)

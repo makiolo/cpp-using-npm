@@ -78,13 +78,13 @@ int main2()
 
 	{
 		// equivalent ways of create A
-		std::shared_ptr<Base> a1 = factory.create<A>("first parameter", 2);
-		std::shared_ptr<A> a2 = factory.create<A>("first parameter", 2);
+		std::shared_ptr<Base> a1 = factory.create_specialized<A>("first parameter", 2);
+		std::shared_ptr<A> a2 = factory.create_specialized<A>("first parameter", 2);
 		std::shared_ptr<Base> a3 = factory.create("A", "first parameter", 2);
 
 		// equivalent ways of create B
-		std::shared_ptr<Base> b1 = factory.create<B>("first parameter", 2);
-		std::shared_ptr<B> b2 = factory.create<B>("first parameter", 2);
+		std::shared_ptr<Base> b1 = factory.create_specialized<B>("first parameter", 2);
+		std::shared_ptr<B> b2 = factory.create_specialized<B>("first parameter", 2);
 		std::shared_ptr<Base> b3 = factory.create("B", "first parameter", 2);
 
 		assert(a1 != a2);
