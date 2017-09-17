@@ -65,3 +65,5 @@ matrix:
 
 script:
   - bash <(curl -s https://raw.githubusercontent.com/makiolo/cmaki/master/ci.sh)
+  - (cd ./node_modules/calculate/bin && ./calc_c 3+4)
+
