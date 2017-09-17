@@ -18,6 +18,7 @@ else()
 	include("${CMAKE_CURRENT_LIST_DIR}/node_modules/cmaki/cmaki.cmake")
 endif()
 cmaki_setup()
+cmaki_find_package(boost-headers)
 cmaki_find_package(fast-event-system)
 cmaki2_executable(example src/example.cpp PTHREADS)
 ##################################################################################

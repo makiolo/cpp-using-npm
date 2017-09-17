@@ -3,13 +3,13 @@
   "version": "1.0.5",
   "description": "example using npm with C++",
   "scripts": {
-    "ci": "cmaki ci",
     "clean": "cmaki clean",
     "setup": "cmaki setup",
     "compile": "cmaki compile",
-    "install": "cmaki install",
+    "install": "cmaki setup && cmaki compile",
     "test": "cmaki tests",
-    "upload": "cmaki upload"
+    "upload": "cmaki upload",
+    "docker": "cmaki docker"
   },
   "repository": {
     "type": "git",
@@ -25,8 +25,10 @@
     "test": "tests"
   },
   "devDependencies": {
-    "cmaki": "makiolo/cmaki",
-    "cmaki_generator": "makiolo/cmaki_generator"
+    "cmaki": "git+https://github.com/makiolo/cmaki.git",
+    "cmaki_generator": "git+https://github.com/makiolo/cmaki_generator.git",
+    "cmaki_identifier": "git+https://github.com/makiolo/cmaki_identifier.git",
+    "cmaki_scripts": "git+https://github.com/makiolo/cmaki_scripts.git"
   },
   "dependencies": {
     "design-patterns-cpp14": "makiolo/design-patterns-cpp14",
