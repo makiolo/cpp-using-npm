@@ -31,9 +31,9 @@
     "cmaki_scripts": "git+https://github.com/makiolo/cmaki_scripts.git"
   },
   "dependencies": {
-    "calculate": "github:makiolo/Calculate",
-    "design-patterns-cpp14": "makiolo/design-patterns-cpp14",
-    "fast-event-system": "makiolo/fast-event-system",
-    "metacommon": "makiolo/metacommon"
+    "calculate": "git+https://github.com/makiolo/Calculate.git",
+    "design-patterns-cpp14": "git+https://github.com/makiolo/design-patterns-cpp14.git",
+    "fast-event-system": "git+https://github.com/makiolo/fast-event-system.git",
+    "metacommon": "git+https://github.com/makiolo/metacommon.git"
   }
 }
