@@ -29,11 +29,5 @@
     "cmaki_generator": "git+https://github.com/makiolo/cmaki_generator.git",
     "cmaki_identifier": "git+https://github.com/makiolo/cmaki_identifier.git",
     "cmaki_scripts": "git+https://github.com/makiolo/cmaki_scripts.git"
-  },
-  "dependencies": {
-    "calculate": "git+https://github.com/makiolo/Calculate.git",
-    "design-patterns-cpp14": "git+https://github.com/makiolo/design-patterns-cpp14.git",
-    "fast-event-system": "git+https://github.com/makiolo/fast-event-system.git",
-    "metacommon": "git+https://github.com/makiolo/metacommon.git"
   }
 }
