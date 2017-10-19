@@ -26,7 +26,7 @@
   "directories": {
     "test": "tests"
   },
-  "devDependencies": {
+  "dependencies": {
     "cmaki": "git+https://github.com/makiolo/cmaki.git",
     "cmaki_generator": "git+https://github.com/makiolo/cmaki_generator.git",
     "cmaki_identifier": "git+https://github.com/makiolo/cmaki_identifier.git",
