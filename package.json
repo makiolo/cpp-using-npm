@@ -10,8 +10,7 @@
     "compile": "cmaki compile",
     "install": "cmaki setup && cmaki compile",
     "test": "cmaki test",
-    "upload": "cmaki upload",
-    "docker": "cmaki docker"
+    "upload": "cmaki upload"
   },
   "repository": {
     "type": "git",
