@@ -26,10 +26,10 @@
     "test": "tests"
   },
   "dependencies": {
+    "cppunix": "https://github.com/makiolo/cppunix",
     "cmaki_scripts": "git+https://github.com/makiolo/cmaki_scripts.git",
     "cmaki": "git+https://github.com/makiolo/cmaki.git",
     "cmaki_generator": "git+https://github.com/makiolo/cmaki_generator.git",
     "cmaki_identifier": "git+https://github.com/makiolo/cmaki_identifier.git"
   }
 }
-

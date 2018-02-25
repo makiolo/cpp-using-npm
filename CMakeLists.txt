@@ -1,4 +1,22 @@
 project(cpp-using-npm CXX)
 cmake_minimum_required(VERSION 3.0)
 include("$ENV{CMAKI_PWD}/node_modules/cmaki/cmaki.cmake")
+
+cmaki_find_package(cppunix)
+cmaki_find_package(boost-headers)
+cmaki_find_package(boost-context)
+cmaki_find_package(boost-coroutine2)
+cmaki_find_package(boost-filesystem)
+cmaki_find_package(boost-regex)
+cmaki_find_package(boost-system)
+cmaki_find_package(paho-mqttpp3)
+cmaki_find_package(teelogging)
+cmaki_find_package(design-patterns-cpp14)
+cmaki_find_package(fast-event-system)
+cmaki_find_package(asyncply)
+cmaki_find_package(ois)
+cmaki_find_package(json)
+cmaki_find_package(restclient-cpp)
+
 cmaki_test(example src/example.cpp)
+
