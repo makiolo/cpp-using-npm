@@ -17,6 +17,7 @@ cmaki_find_package(asyncply)
 cmaki_find_package(ois)
 cmaki_find_package(json)
 cmaki_find_package(restclient-cpp)
+cmaki_find_package(openssl)
 
 cmaki_test(example src/example.cpp)
 
