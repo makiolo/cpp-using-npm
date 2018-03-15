@@ -1,6 +1,6 @@
 project(cpp-using-npm CXX)
 cmake_minimum_required(VERSION 3.0)
-include("$ENV{CMAKI_PWD}/node_modules/cmaki/cmaki.cmake")
+include("$ENV{CMAKI_PWD}/node_modules/npm-mas-mas/cmaki/cmaki.cmake")
 
 cmaki_find_package(cppunix)
 cmaki_find_package(boost-headers)
