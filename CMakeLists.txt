@@ -2,7 +2,6 @@ project(cpp-using-npm CXX)
 cmake_minimum_required(VERSION 3.0)
 include("$ENV{CMAKI_PWD}/node_modules/npm-mas-mas/cmaki/cmaki.cmake")
 
-cmaki_find_package(cppunix)
 cmaki_find_package(boost-headers)
 cmaki_find_package(boost-context)
 cmaki_find_package(boost-coroutine2)
@@ -18,6 +17,7 @@ cmaki_find_package(ois)
 cmaki_find_package(json)
 cmaki_find_package(restclient-cpp)
 cmaki_find_package(openssl)
+cmaki_find_package(cppunix)
 
 cmaki_test(example src/example.cpp)
 
